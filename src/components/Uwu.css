@@ -1,0 +1,56 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+  }
+  
+  .semester {
+    padding: 15px;
+    min-width: 200px; 
+    background-color: #ffb6c1;
+    border: 2px solid #ff7aa2;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .subject-card {
+    padding: 12px;
+    background-color: #ffe6f2;
+    border: 1px solid #ff7aa2;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .subject-card:hover {
+    background-color: #ffccdd;
+    transform: scale(1.05);
+  }
+  
+  .subject-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 5px;
+  }
+  
+
+  .subject-card h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+
+  .highlight-prev {
+    background-color: #d84040;
+    border-color: #5f0202;
+  }
+  
+
+  .highlight-next {
+    background-color: #ccffcc;
+    border-color: #66aa66;
+  }
+  .subject-card.highlight-selected {
+    background-color: #ff0062;
+    border: 2px solid #830f52; 
+  }
